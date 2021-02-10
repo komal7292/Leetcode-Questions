@@ -1,0 +1,5 @@
+var maximumWealth = function(accounts) {
+const sumArray = accounts.reduce((a, b)=> Math.max(a, b.reduce((a, b) => a + b, 0)), 0);
+    return sumArray
+};
+console.log(accounts[[1,2,3],[3,2,1]])
