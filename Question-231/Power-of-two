@@ -1,0 +1,6 @@
+var isPowerOfTwo = function(n) {
+    for (var i = 1; i < n; i= i * 2){
+    }
+    return i === n
+}
+console.log(n(1))
