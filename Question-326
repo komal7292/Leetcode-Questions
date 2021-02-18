@@ -1,0 +1,7 @@
+var isPowerOfThree = function(n) {
+    for (var i = 1; i < n; i = i * 3){
+    }
+    return i === n
+};
+
+console.log(n(27))
