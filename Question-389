@@ -1,0 +1,12 @@
+var findTheDifference = function(s, t) {
+   var smallerArray = s.split('');
+   var biggerArray = t.split('');
+    for (var i = 0; i < smallerArray.length; i++) {
+        var elementToRemove = smallerArray[i];
+        var position = biggerArray.indexOf(elementToRemove)
+        biggerArray.splice(position, 1);
+    }
+    return biggerArray[0];
+}
+
+//Input: s = "abcd", t = "abcde"
