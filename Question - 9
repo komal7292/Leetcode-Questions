@@ -1,0 +1,12 @@
+var isPalindrome = function(x) {
+  var result = ""
+  var convertedString = x.toString();
+    for (var i = convertedString.length -1; i >= 0; i--) {
+        result += convertedString[i]
+        if (result === convertedString) {
+            return true
+        }
+    }
+    return false
+};
+console.log(isPalindrome(x = 121))
