@@ -1,0 +1,12 @@
+var numJewelsInStones = function(jewels, stones) {
+    var result = 0;
+    for (var i = 0; i < jewels.length; i++) {
+        for (var j = 0; j < stones.length; j++) {
+            if (jewels[i] === stones[j]) {
+                result++
+            }
+        }
+    }
+    return result
+}
+console.log(numJewelsInStones(jewels = "aA", stones = "aAAbbbb"))
