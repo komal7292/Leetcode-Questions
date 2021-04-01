@@ -1,0 +1,10 @@
+var missingNumber = function(nums) {
+    var expectedSum  = 0;
+    var actualSum = 0;
+    for (var i = 0; i < nums.length; i++) {
+        expectedSum += i + 1
+        actualSum += nums[i]
+    }
+    return expectedSum-actualSum
+};
+console.log(missingNumber(nums = [3,0,1]))
